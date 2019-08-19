@@ -1225,6 +1225,20 @@ class Matrix
     collect {|e| -e }
   end
 
+  #
+  # Returns the maximum value of all
+  #
+  def max
+    to_a.flatten.max
+  end
+
+  #
+  # Returns the minimum value of all
+  #
+  def min
+    to_ary.flatten.min
+  end
+
   #--
   # MATRIX FUNCTIONS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   #++

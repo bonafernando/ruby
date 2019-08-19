@@ -583,6 +583,16 @@ class TestMatrix < Test::Unit::TestCase
     assert_equal(1, s1 ** o)
   end
 
+  def test_max
+    s1 = @b3.max
+    assert_equal(s1, 9)
+  end
+
+  def test_min
+    s1 = @a3.min
+    assert_equal(s1, -4)
+  end
+
   def test_hstack
     assert_equal Matrix[[1,2,3,2,3,4,1,2,3], [4,5,6,5,6,7,4,5,6]],
       @m1.hstack(@n1, @m1)
